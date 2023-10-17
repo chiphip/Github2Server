@@ -44,6 +44,8 @@ On the **Deploy keys / Add new** page, put the folloiwn information in:
   3. Check **Allow write access**
   4. Press **Add key**
 
+![alt text](https://github.com/chiphip/Github2Server/blob/main/71.png?raw=true)
+![alt text](https://github.com/chiphip/Github2Server/blob/main/72.png?raw=true)
 
 
 ----Step 2 on Github----
