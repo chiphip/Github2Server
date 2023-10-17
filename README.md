@@ -126,3 +126,13 @@ Command to view *Authorized Keys*
 ```
 nano ~/.ssh/authorized_keys
 ```
+
+
+
+
+
+---
+##### Credits:
+
+https://medium.com/swlh/how-to-deploy-your-application-to-digital-ocean-using-github-actions-and-save-up-on-ci-cd-costs-74b7315facc2
+
