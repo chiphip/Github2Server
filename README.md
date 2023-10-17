@@ -9,7 +9,9 @@ There are two places where we need to make changes:
 
 Paste the following command in your linux server:
 
-`ssh-keygen -t ed25519 -C "YOUREMAIL@GMAIL.COM" -f ~/.ssh/id_ed25519 -N '' && cat ~/.ssh/id_ed25519 && cat ~/.ssh/id_ed25519.pub && cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys && ssh-keyscan github.com >> /root/.ssh/known_hosts && eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519`
+```
+ssh-keygen -t ed25519 -C "YOUREMAIL@GMAIL.COM" -f ~/.ssh/id_ed25519 -N '' && cat ~/.ssh/id_ed25519 && cat ~/.ssh/id_ed25519.pub && cat ~/.ssh/id_ed25519.pub >> ~/.ssh/authorized_keys && ssh-keyscan github.com >> /root/.ssh/known_hosts && eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519
+```
 
 Change "YOUREMAIL@GMAIL.COM" with **your email**
 
@@ -99,3 +101,28 @@ jobs:
 Press on **Commit changes** and the Github Actions will for the first time connect to your Server. And anytime you push/hhange something on your repository, Github will update the changes on the Server.
 
 ![alt text](https://github.com/chiphip/Github2Server/blob/main/76.png?raw=true)
+
+
+
+
+### Troubleshooting
+
+Command to check if your connected to Github from your server
+```
+ssh -T git@github.com
+```
+
+Command to give the user read, write, and execute permissions
+```
+chmod 700 ~/.ssh/authorized_keys
+```
+
+Command to restart ssh
+```
+sudo systemctl restart ssh
+```
+
+Command to view *Authorized Keys*
+```
+nano ~/.ssh/authorized_keys
+```
