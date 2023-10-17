@@ -59,6 +59,9 @@ b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAA)
 
 3. **SSH_USERNAME** (Looks like: root)
 
+![alt text](https://github.com/chiphip/Github2Server/blob/main/73.png?raw=true)
+![alt text](https://github.com/chiphip/Github2Server/blob/main/74.png?raw=true)
+![alt text](https://github.com/chiphip/Github2Server/blob/main/75.png?raw=true)
 
 
 ----Step 3 on Github----
@@ -95,3 +98,4 @@ jobs:
 
 Press on **Commit changes** and the Github Actions will for the first time connect to your Server. And anytime you push/hhange something on your repository, Github will update the changes on the Server.
 
+![alt text](https://github.com/chiphip/Github2Server/blob/main/76.png?raw=true)
